@@ -236,6 +236,8 @@ body[data-lang="en"] .lang-en { color: var(--accent); font-weight: 500; }
   color: var(--accent);
   letter-spacing: 0.1em;
 }
+/* terminal prompt before the section index */
+.section-num::before { content: "\276F "; opacity: 0.7; }
 .section-head h2 {
   font-family: var(--font-serif);
   font-size: clamp(1.8rem, 4vw, 2.6rem);
@@ -244,26 +246,51 @@ body[data-lang="en"] .lang-en { color: var(--accent); font-weight: 500; }
 }
 .section-sub { color: var(--muted); max-width: 56ch; }
 
-/* ---------- CARDS (services) ---------- */
+/* ---------- CARDS (services / "menu") ---------- */
+.menu-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  color: var(--muted-2);
+  margin-bottom: 1rem;
+}
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.1rem;
+  counter-reset: menu;
 }
 .card {
+  position: relative;
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: var(--radius);
   padding: 1.6rem;
+  counter-increment: menu;
   transition: border-color 0.25s, transform 0.25s;
 }
 .card:hover { border-color: var(--accent); transform: translateY(-3px); }
+/* chip dots in the corner — echo of the logo */
+.card::after {
+  content: "";
+  position: absolute;
+  top: 1.5rem;
+  right: 1.4rem;
+  width: 20px;
+  height: 6px;
+  background: radial-gradient(circle 3px at 3px 3px, var(--accent) 96%, transparent) 0 0 / 8px 6px repeat-x;
+  opacity: 0.4;
+}
 .card-tag {
   font-family: var(--font-mono);
   font-size: 0.72rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   color: var(--accent);
+}
+/* menu-style index: 01 · BACKEND */
+.card-tag::before {
+  content: counter(menu, decimal-leading-zero) " · ";
+  color: var(--muted-2);
 }
 .card h3 { font-size: 1.2rem; font-weight: 600; margin: 0.5rem 0 0.7rem; }
 .card p { color: var(--muted); font-size: 0.95rem; }
@@ -429,6 +456,30 @@ body[data-lang="en"] .lang-en { color: var(--accent); font-weight: 500; }
   color: var(--muted-2);
 }
 .footer-right { font-family: var(--font-mono); letter-spacing: 0.05em; cursor: default; }
+
+/* ---------- easter egg toast ---------- */
+.snack-toast {
+  position: fixed;
+  left: 50%;
+  bottom: 28px;
+  transform: translate(-50%, 140%);
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: var(--surface);
+  border: 1px solid var(--accent);
+  border-radius: 12px;
+  padding: 0.75rem 1.1rem;
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  color: var(--text);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+  opacity: 0;
+  z-index: 100;
+  transition: transform 0.4s cubic-bezier(.2,.9,.3,1.2), opacity 0.4s ease;
+}
+.snack-toast.show { transform: translate(-50%, 0); opacity: 1; }
+.snack-toast-mark { font-size: 1.2rem; }
 
 /* ---------- responsive ---------- */
 @media (max-width: 640px) {
