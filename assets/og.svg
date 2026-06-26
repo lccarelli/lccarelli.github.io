@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b0d0c"/>
+      <stop offset="1" stop-color="#11201a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- zigzag accent strip -->
+  <g fill="#34d399">
+    <path d="M0 0 l20 0 l-10 10 z M40 0 l20 0 l-10 10 z M80 0 l20 0 l-10 10 z M120 0 l20 0 l-10 10 z M160 0 l20 0 l-10 10 z M200 0 l20 0 l-10 10 z M240 0 l20 0 l-10 10 z M280 0 l20 0 l-10 10 z M320 0 l20 0 l-10 10 z M360 0 l20 0 l-10 10 z M400 0 l20 0 l-10 10 z M440 0 l20 0 l-10 10 z M480 0 l20 0 l-10 10 z M520 0 l20 0 l-10 10 z M560 0 l20 0 l-10 10 z M600 0 l20 0 l-10 10 z M640 0 l20 0 l-10 10 z M680 0 l20 0 l-10 10 z M720 0 l20 0 l-10 10 z M760 0 l20 0 l-10 10 z M800 0 l20 0 l-10 10 z M840 0 l20 0 l-10 10 z M880 0 l20 0 l-10 10 z M920 0 l20 0 l-10 10 z M960 0 l20 0 l-10 10 z M1000 0 l20 0 l-10 10 z M1040 0 l20 0 l-10 10 z M1080 0 l20 0 l-10 10 z M1120 0 l20 0 l-10 10 z M1160 0 l20 0 l-10 10 z"/>
+  </g>
+
+  <text x="90" y="150" font-family="ui-monospace, 'SF Mono', monospace" font-size="26" fill="#34d399" letter-spacing="2">snack-factory</text>
+
+  <text x="86" y="300" font-family="Georgia, 'Times New Roman', serif" font-size="118" font-weight="700" fill="#e9ece9">Laura Carelli</text>
+
+  <text x="90" y="370" font-family="Helvetica, Arial, sans-serif" font-size="40" font-weight="600" fill="#34d399">Staff Software Engineer</text>
+  <text x="90" y="420" font-family="Helvetica, Arial, sans-serif" font-size="34" fill="#9aa39c">Tech Lead · Consultant</text>
+
+  <text x="90" y="510" font-family="Helvetica, Arial, sans-serif" font-size="27" fill="#9aa39c">Backend · Mobile · Automation — from planning to production</text>
+  <text x="90" y="552" font-family="ui-monospace, 'SF Mono', monospace" font-size="22" fill="#6b746d">Independent · Remote · AI-augmented</text>
+
+  <text x="1110" y="595" text-anchor="end" font-family="ui-monospace, 'SF Mono', monospace" font-size="20" fill="#34d399" opacity="0.8">i want to believe</text>
+</svg>
