@@ -1,7 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="14" fill="#0b0d0c"/>
-  <g fill="#34d399">
-    <path d="M8 16 l12 0 l-6 7 z M28 16 l12 0 l-6 7 z M48 16 l12 0 l-6 7 z"/>
+  <mask id="bite">
+    <rect width="64" height="64" rx="16" fill="#fff"/>
+    <path d="M64 0 L40 0 L40 8 L48 8 L48 16 L56 16 L56 24 L64 24 Z" fill="#000"/>
+  </mask>
+  <rect width="64" height="64" rx="16" fill="#34d399" mask="url(#bite)"/>
+  <g fill="#0b0d0c">
+    <rect x="14" y="36" width="8" height="8" rx="2"/>
+    <rect x="30" y="44" width="8" height="8" rx="2"/>
+    <rect x="20" y="22" width="8" height="8" rx="2"/>
   </g>
-  <text x="32" y="50" text-anchor="middle" font-family="ui-monospace, monospace" font-size="30" font-weight="700" fill="#e9ece9">sf</text>
 </svg>

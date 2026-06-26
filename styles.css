@@ -85,12 +85,26 @@ a { color: inherit; text-decoration: none; }
   border-bottom: 1px solid var(--line);
 }
 .brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   font-family: var(--font-mono);
   font-size: 1.05rem;
   font-weight: 500;
   letter-spacing: 0.01em;
 }
+.brand-mark {
+  width: 26px;
+  height: 26px;
+  color: var(--accent);
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+.brand:hover .brand-mark { transform: rotate(-6deg) scale(1.05); }
+.brand-chips rect { fill: var(--bg); }
+.brand-word { color: var(--text); }
 .brand-dot { color: var(--accent); }
+.footer-brand { color: var(--accent); }
 .nav-links {
   display: flex;
   gap: 1.4rem;

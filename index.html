@@ -103,7 +103,17 @@
   <div class="zigzag" aria-hidden="true"></div>
 
   <header class="nav">
-    <a href="#top" class="brand">snack<span class="brand-dot">-</span>factory</a>
+    <a href="#top" class="brand" aria-label="snack-factory — home">
+      <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true">
+        <mask id="brand-bite">
+          <rect width="64" height="64" rx="16" fill="#fff"/>
+          <path d="M64 0 L40 0 L40 8 L48 8 L48 16 L56 16 L56 24 L64 24 Z" fill="#000"/>
+        </mask>
+        <rect width="64" height="64" rx="16" fill="currentColor" mask="url(#brand-bite)"/>
+        <g class="brand-chips"><rect x="14" y="36" width="8" height="8" rx="2"/><rect x="30" y="44" width="8" height="8" rx="2"/><rect x="20" y="22" width="8" height="8" rx="2"/></g>
+      </svg>
+      <span class="brand-word">snack<span class="brand-dot">-</span>factory</span>
+    </a>
     <nav class="nav-links">
       <a href="#services" data-en="Services" data-es="Servicios">Servicios</a>
       <a href="#how" data-en="How I work" data-es="Cómo trabajo">Cómo trabajo</a>
@@ -320,7 +330,7 @@
   </main>
 
   <footer class="footer">
-    <p class="footer-left">© <span id="year"></span> Laura Carelli</p>
+    <p class="footer-left">© <span id="year"></span> Laura Carelli · <span class="footer-brand">snack-factory</span> — <span data-en="small bites, production-grade" data-es="small bites, production-grade">small bites, production-grade</span></p>
     <p class="footer-right" title="The owls are not what they seem.">i want to believe <span aria-hidden="true">🛸</span></p>
   </footer>
 

@@ -12,7 +12,14 @@
     <path d="M0 0 l20 0 l-10 10 z M40 0 l20 0 l-10 10 z M80 0 l20 0 l-10 10 z M120 0 l20 0 l-10 10 z M160 0 l20 0 l-10 10 z M200 0 l20 0 l-10 10 z M240 0 l20 0 l-10 10 z M280 0 l20 0 l-10 10 z M320 0 l20 0 l-10 10 z M360 0 l20 0 l-10 10 z M400 0 l20 0 l-10 10 z M440 0 l20 0 l-10 10 z M480 0 l20 0 l-10 10 z M520 0 l20 0 l-10 10 z M560 0 l20 0 l-10 10 z M600 0 l20 0 l-10 10 z M640 0 l20 0 l-10 10 z M680 0 l20 0 l-10 10 z M720 0 l20 0 l-10 10 z M760 0 l20 0 l-10 10 z M800 0 l20 0 l-10 10 z M840 0 l20 0 l-10 10 z M880 0 l20 0 l-10 10 z M920 0 l20 0 l-10 10 z M960 0 l20 0 l-10 10 z M1000 0 l20 0 l-10 10 z M1040 0 l20 0 l-10 10 z M1080 0 l20 0 l-10 10 z M1120 0 l20 0 l-10 10 z M1160 0 l20 0 l-10 10 z"/>
   </g>
 
-  <text x="90" y="150" font-family="ui-monospace, 'SF Mono', monospace" font-size="26" fill="#34d399" letter-spacing="2">snack-factory</text>
+  <!-- byte mark -->
+  <g transform="translate(90 96)">
+    <mask id="ogbite"><rect width="64" height="64" rx="16" fill="#fff"/><path d="M64 0 L40 0 L40 8 L48 8 L48 16 L56 16 L56 24 L64 24 Z" fill="#000"/></mask>
+    <rect width="64" height="64" rx="16" fill="#34d399" mask="url(#ogbite)"/>
+    <g fill="#0b0d0c"><rect x="14" y="36" width="8" height="8" rx="2"/><rect x="30" y="44" width="8" height="8" rx="2"/><rect x="20" y="22" width="8" height="8" rx="2"/></g>
+  </g>
+  <text x="170" y="138" font-family="ui-monospace, 'SF Mono', monospace" font-size="30" fill="#34d399" letter-spacing="1">snack-factory</text>
+  <text x="170" y="170" font-family="ui-monospace, 'SF Mono', monospace" font-size="18" fill="#6b746d" letter-spacing="1">small bites, production-grade</text>
 
   <text x="86" y="300" font-family="Georgia, 'Times New Roman', serif" font-size="118" font-weight="700" fill="#e9ece9">Laura Carelli</text>
 
